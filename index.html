@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมเพื่อสุขภาพ</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="header">
+        <p class="p-txt">โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI)</p>
+    </header>
+    <div class="form-box">
+            <label for="weight" class="p-txt" style="margin-left: 50px;">น้ำหนัก (kg)</label><br>
+            <input class="input" id="input-weight" type="number">
+            <br>
+            <label for="height" class="p-txt" style="margin-left: 50px;">ส่วนสูง (cm)</label><br>
+            <input class="input" id="input-height" type="number" />
+            <br>
+            <button class="submit" type="submit" onclick="calculateBMI()"
+                style="font-family: 'Prompt', sans-serif;">คำนวณ</button>
+            <p id="errorMessge" class="errorMessge" style="margin-left: 50px;"></p><br>
+            <div id="answer_section" class="answer_section">BMI</div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <h1 class="display-5 fw-bold">เกณฑ์การแปลผลค่า BMI</h1>
+            <h4 class="col-md-8 fs-4">ต่ำกว่าเกณฑ์ (น้อยกว่า 18.5)</h4>
+            <p>คนที่มี BMI ต่ำกว่าเกณฑ์ อาจเสี่ยงต่อการได้รับสารอาหารไม่เพียงพอ หรือได้รับพลังงานไม่เพียงพอ
+                ส่งผลให้ร่างกายอ่อนเพลียง่าย การรับประทานอาหารให้เพียงพอและออกกำลังกายแบบเวทเทรนนิ่ง
+                เพื่อเสริมสร้างกล้ามเนื้อ สามารถช่วยเพิ่มค่า BMI
+                ให้อยู่ในเกณฑ์ปกติได้</p>
+            <h4 class="col-md-8 fs-4">ปกติสมส่วน (18.5 - 22.9)</h4>
+            <p>คนที่มี BMI อยู่ในช่วงนี้ ห่างไกลโรคที่เกิดจากความอ้วน และมีความเสี่ยงต่อการเกิดโรคต่าง ๆ น้อยที่สุด
+                ควรพยายามรักษาระดับค่า BMI ให้อยู่ในระดับนี้ให้นานที่สุด</p>
+            <h4 class="col-md-8 fs-4">น้ำหนักเกิน (23.0 - 24.9)</h4>
+            <p>คนที่มี BMI ในช่วงนี้ถือว่าเป็นกลุ่มผู้ที่มีความอ้วนอยู่บ้าง แม้จะไม่ถือว่าอ้วน
+                แต่หากประวัติคนในครอบครัวเคยเป็นโรคเบาหวานและความดันโลหิตสูง ก็ถือว่ายังมีความเสี่ยงมากกว่าคนปกติ</p>
+            <h4 class="col-md-8 fs-4">อ้วนระดับ 1 (25.0 - 29.9)</h4>
+            <p>คนที่มี BMI ในช่วงนี้มีความเสี่ยงต่อการเกิดโรคที่มากับความอ้วนได้เช่นกัน ทั้งโรคเบาหวาน
+                และความดันโลหิตสูง</p>
+            <h4 class="col-md-8 fs-4">อ้วนระดับ 2 (30.0 ขึ้นไป)</h4>
+            <p>คนที่มี BMI ในช่วงนี้ค่อนข้างอันตราย เพราะเข้าเกณฑ์อ้วนมาก เสี่ยงต่อการเกิดโรคร้ายแรงที่แฝงมากับความอ้วน
+                หากค่า BMI อยู่ในระดับนี้ จะต้องระวังการรับประทานไขมัน และควรออกกำลังกายอย่างสม่ำเสมอ
+                และหากเลขยิ่งสูงกว่า 40.0 ยิ่งแสดงถึงความอ้วนที่มากขึ้น</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
