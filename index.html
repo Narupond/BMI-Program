@@ -9,20 +9,18 @@
 </head>
 
 <body>
-    <header class="header">
-        <p class="p-txt">โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI)</p>
-    </header>
+    <p class="p-txt">โปรแกรมคำนวณหาค่าดัชนีมวลกาย (BMI)</p>
     <div class="form-box">
-            <label for="weight" class="p-txt" style="margin-left: 50px;">น้ำหนัก (kg)</label><br>
-            <input class="input" id="input-weight" type="number">
-            <br>
-            <label for="height" class="p-txt" style="margin-left: 50px;">ส่วนสูง (cm)</label><br>
-            <input class="input" id="input-height" type="number" />
-            <br>
-            <button class="submit" type="submit" onclick="calculateBMI()"
-                style="font-family: 'Prompt', sans-serif;">คำนวณ</button>
-            <p id="errorMessge" class="errorMessge" style="margin-left: 50px;"></p><br>
-            <div id="answer_section" class="answer_section">BMI</div>
+        <label for="weight" class="p-label" style="margin-left: 25%;">น้ำหนัก (kg)</label><br>
+        <input class="input" id="input-weight" type="number">
+        <br>
+        <label for="height" class="p-label" style="margin-left: 25%;">ส่วนสูง (cm)</label><br>
+        <input class="input" id="input-height" type="number" />
+        <br>
+        <button class="submit" type="submit" onclick="calculateBMI()"
+            style="font-family: 'Prompt', sans-serif;">คำนวณ</button>
+        <p id="errorMessage" class="errorMessage" style="margin-left: 25%;"></p><br>
+        <div id="answer_section" class="answer_section">BMI</div>
     </div>
     <div class="content">
         <div class="container">
