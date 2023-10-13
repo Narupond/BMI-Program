@@ -13,13 +13,15 @@
     <div class="form-box">
         <label for="weight" class="p-label" style="margin-left: 25%;">น้ำหนัก (kg)</label><br>
         <input class="input" id="input-weight" type="number">
+        <span class="errorMessage" id="errorMessageWeight" style="margin-left: 25%;"></span>
         <br>
         <label for="height" class="p-label" style="margin-left: 25%;">ส่วนสูง (cm)</label><br>
         <input class="input" id="input-height" type="number" />
+        <span class="errorMessage" id="errorMessageHeight" style="margin-left: 25%;"></span>
         <br>
         <button class="submit" type="submit" onclick="calculateBMI()"
             style="font-family: 'Prompt', sans-serif;">คำนวณ</button>
-        <p id="errorMessage" class="errorMessage" style="margin-left: 25%;"></p><br>
+        <span id="errorMessage" class="errorMessage" style="margin-left: 25%;"></span><br>
         <div id="answer_section" class="answer_section">BMI</div>
     </div>
     <div class="content">
@@ -43,6 +45,8 @@
             <p>คนที่มี BMI ในช่วงนี้ค่อนข้างอันตราย เพราะเข้าเกณฑ์อ้วนมาก เสี่ยงต่อการเกิดโรคร้ายแรงที่แฝงมากับความอ้วน
                 หากค่า BMI อยู่ในระดับนี้ จะต้องระวังการรับประทานไขมัน และควรออกกำลังกายอย่างสม่ำเสมอ
                 และหากเลขยิ่งสูงกว่า 40.0 ยิ่งแสดงถึงความอ้วนที่มากขึ้น</p>
+            <input class="btn" type="button" onclick="window.location.href='https://golink.icu/ePTmhPD'"
+                value="อ่านเพิ่มเติม">
         </div>
     </div>
     <script src="app.js"></script>
